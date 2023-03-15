@@ -1,8 +1,8 @@
+""" Import des fonctions et classes nécessaires au script principal """
 from toolbox.helpers import set_locations, get_name_date
 from toolbox.Library import Library, LentLibrary
-from toolbox.Film import Film, VhfFilm, DvdFilm
-from toolbox.Friend import Friend
 
+""" Données brutes """
 raw_films = [
     ("Blade Runner (1982)", "vhf"),
     ("Alien : Le 8ème Passager (1979)", "vhf"),
@@ -22,6 +22,7 @@ friends = [
     ("Zoé", "Terminator 2 : Le Jugement dernier"),
 ]
 
+""" Programme principal """
 def main():
     my_films = get_name_date(raw_films)
     my_library = Library(my_films)
