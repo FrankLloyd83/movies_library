@@ -1,3 +1,8 @@
+"""
+Classe Friend qui a une méthode :
+    - display() : affiche la liste de films en possession de l'ami
+"""
+
 class Friend:
     def __init__(self, name, movies=[]):
         self.name = name
